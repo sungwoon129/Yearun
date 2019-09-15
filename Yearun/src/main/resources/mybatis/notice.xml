@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="notice">
+
+<sql id="search">
+		<where>
+			<!-- <![CDATA[]]> -->
+		<choose>
+		<when test="pager.search =='all'">
+		 notice_title like CONCAT(CONCAT('%',#{pager.keyword}),'%') or notice_context like CONCAT(CONCAT('%',#{pager.keyword}),'%')	
+		</when>
+		
+		<when test="pager.keyword !='' and pager.keyword != null and pager.search != 'all'"> <!--  키워드앞에 #안붙음 -->
+		${pager.search} LIKE CONCAT(CONCAT('%',#{pager.keyword}),'%') <!-- xml파일에서는 %인식불가 CDATA를 통해서 문자로 만들어줌 그걸 concat으로 이어붙임 --> 
+		</when> <!-- #는 값으로 가져다 붙이는거 , $는 문자열로 가져다 붙이는거,$를 쓰면 해킹당할수도있음 -->
+		<otherwise>
+		
+		</otherwise>
+		</choose>
+		</where>
+	</sql>
+	
+	<select id="total" resultType="Integer">
+	SELECT COUNT(*) FROM notice
+	<include refid="search"></include>
+	</select>
+
+	<select id="todayTotal" resultType="Integer">
+	SELECT count(*) FROM notice 
+	WHERE 	<choose>
+		<when test="pager.search =='all'">
+		 notice_title like CONCAT(CONCAT('%',#{pager.keyword}),'%') or notice_context like CONCAT(CONCAT('%',#{pager.keyword}),'%')	AND
+		</when>
+		
+		<when test="pager.keyword !='' and pager.keyword != null and pager.search != 'all'"> <!--  키워드앞에 #안붙음 -->
+		${pager.search} LIKE CONCAT(CONCAT('%',#{pager.keyword}),'%') AND <!-- xml파일에서는 %인식불가 CDATA를 통해서 문자로 만들어줌 그걸 concat으로 이어붙임 --> 
+		</when> <!-- #는 값으로 가져다 붙이는거 , $는 문자열로 가져다 붙이는거,$를 쓰면 해킹당할수도있음 -->
+		<otherwise>
+		
+		</otherwise>
+		</choose>reg_date > CURRENT_DATE( );
+	</select>
+
+
+	<update id="incRef">
+		UPDATE notice SET ref=ref+1 where notice_code=#{noticeCode}
+	</update>
+	
+	<select id="list" resultType="Notice">
+		SELECT * FROM  notice ORDER BY notice_code DESC
+	</select>
+	<select id="item" resultType="Notice">
+		SELECT * FROM notice WHERE notice_code=#{noticeCode}
+	</select>
+	<delete id="delete">
+		DELETE FROM notice WHERE notice_code=#{noticeCode}
+	</delete>
+	<insert id="add" parameterType="Notice">
+		INSERT INTO notice (id,notice_title,notice_context,reg_date,up_filename)
+		VALUES (#{id},#{noticeTitle},#{noticeContext},NOW(),#{upFilename})
+	</insert>
+	
+	<update id="update">
+		UPDATE notice
+		SET notice_title=#{noticeTitle}, notice_context=#{noticeContext}, up_filename=#{upFilename}
+		WHERE notice_code=#{noticeCode}
+	</update>
+	
+	<update id="incRecommend">
+			<!-- UPDATE free_board SET recommend=recommend+1 WHERE free_code=#{freeCode} -->
+			UPDATE notice SET recommend=recommend+1 WHERE notice_code=#{noticeCode}
+	 </update>
+
+	<insert id="checkRecommend">
+		INSERT INTO nrecommend VALUES(#{noticeCode},#{id})
+	</insert>
+	
+		<select id="countRecommend" resultType="Integer">
+	SELECT COUNT(*) FROM nrecommend WHERE id=#{id} and notice_code=#{noticeCode}
+	</select>
+</mapper>

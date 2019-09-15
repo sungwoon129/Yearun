@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="user">
+	<delete id="deleteUser">
+		delete from member where id = #{id};
+	</delete>
+
+	<select id="nameChk" resultType="int">
+		SELECT COUNT(*) FROM member WHERE name=#{name}
+	</select>
+	
+	<select id="idChk" resultType="int">
+		SELECT COUNT(*) FROM member WHERE id=#{id}
+	</select>
+	
+	<select id="login" resultType="User">
+		SELECT * FROM  member WHERE id=#{id} and pw=#{pw}
+	</select>
+
+
+	<insert id="add">
+		INSERT INTO member(id,pw,name,age,nickname,address,phone)
+		VALUES (#{id}, #{pw},#{name},#{age},#{nickname},#{address},#{phone})
+	</insert>
+
+	<select id="userInfo" resultType="User">
+	SELECT * FROM member WHERE id=#{id}
+	</select>
+	
+	<update id="mypageUpdate">
+	UPDATE member SET nickname=#{nickname}, pw=#{pw},address=#{address},phone=#{phone}
+	WHERE id=#{id}
+	</update>
+	
+</mapper>

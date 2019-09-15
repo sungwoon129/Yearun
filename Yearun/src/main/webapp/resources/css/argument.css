@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
+
+body, table, div, p, li {font-family: 'Nanum Gothic', sans-serif;}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+a:hover { 
+    color: skyblue;
+}
+
+
+
+
+
+
+/*상단 공통으로 들어가는 부분*/
+
+#signup_box{
+    box-sizing: content-box;
+    width: 1000px;
+    height: 1463px;
+    margin: 3% 0% 0% 25.6%;
+}
+
+#signup_form{
+    width: 100%;
+    height: 1620px;
+}
+
+#signup_title{
+    font-size: 20pt;
+    font-weight: bold;
+    margin-top:2%; 
+    text-align: left;
+    position:relative;
+    margin-left: 3%;
+    margin-bottom:2.5%;
+}
+
+
+.signup_index{
+    width:100%;
+    height: 58px;
+    border-bottom-style:solid;
+    border-top-style:solid;
+    border-bottom-width:1px;
+    border-bottom-color: rgb(183,183,183);
+    border-top-width: 1px;
+    border-top-color: rgb(183,183,183);
+    border-left: hidden;
+    border-right: hidden;    
+}
+
+
+#rectangle1{
+    color:white;
+    width: 177px;
+    height: 58px;
+    margin-left: 23%;
+    background:rgb(102,102,102);
+    text-align: center;
+    font-weight: bold;
+    float:left;
+}
+
+#rectangle2{
+    color:gray;
+    width: 177px;
+    height: 58px;
+    background:/*rgb(102,102,102)*/;
+    text-align: center;
+    font-weight: bold;
+    float:left;
+}
+
+#rectangle3{
+    color:gray;
+    width: 177px;
+    height: 58px;
+    background:/*rgb(102,102,102)*/;
+    text-align: center;
+    font-weight: bold;
+    float:left;
+}
+
+
+#r_text1{
+    margin-top: 20px;
+}
+
+#r_text2{
+    margin-top: 20px;
+}
+
+#r_text3{
+    margin-top: 20px;
+}
+
+/*상단 공통으로 들어가는 부분 끝*/
+
+
+
+/*약관 박스 사이즈 187*740*/
+
+
+#innertextbox1{
+    box-sizing: content-box;
+    width: 740px;
+    height: 180px;
+    border:1px solid rgb(204,204,204);
+   margin-left: 13.5%;
+    margin-top: 3%;
+    margin-bottom: 1%;
+}
+
+#innertextbox2{
+    box-sizing: content-box;
+    width: 740px;
+    height: 180px;
+    border:1px solid rgb(204,204,204);
+    margin-left: 13.5%;
+    margin-top: 3%;
+    margin-bottom: 1%;
+}
+
+#innertextbox3{
+    box-sizing: content-box;
+    width: 740px;
+    height: 180px;
+    border:1px solid rgb(204,204,204);
+    margin-left: 13.5%;
+    margin-top: 3%;
+    margin-bottom: 1%;
+}
+
+#innertextbox4{
+    box-sizing: content-box;
+    width: 740px;
+    height: 180px;
+    border:1px solid rgb(204,204,204);
+    margin-left: 13.5%;
+    margin-top: 3%;
+    margin-bottom: 1%;
+}
+
+/*약관박스 끝*/
+
+/*약관박스사이 hr태그*/
+#line1{
+   
+    width: 740px;
+    border:1px solid rgb(204,204,204);
+    margin-left: 13.5%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+#line2{
+    width: 740px;
+    border:1px solid rgb(204,204,204);
+    margin-left: 13.5%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+#line3{
+    width: 740px;
+    border:1px solid rgb(204,204,204);
+    margin-left: 13.5%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+#line4{
+    width: 740px;
+    border:1px solid rgb(204,204,204);
+    margin-left: 13.5%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+#line5{
+    width: 740px;
+    border:1px solid rgb(204,204,204);
+    margin-left: 13.5%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+
+/*약관박스사이 hr태그 끝*/
+
+
+/*약관텍스트*/
+#explanation{
+ font-size: 28pt;
+ margin-top: 5%;
+ margin-bottom: 2%;
+ text-align: center;
+}
+
+.terms1{
+    font-size: 17pt;
+    text-align: center;
+}
+
+.terms2{
+    font-size: 17pt;
+    text-align: center;
+}
+
+.terms3{
+    font-size: 17pt;
+    text-align: center;
+}
+
+.terms4{
+    font-size: 17pt;
+    text-align: center;
+}
+
+#ck_all{
+  padding-left: 35%;
+  color: rgb(255,102,51);
+}
+
+
+#ck-1{
+  font-size: 12pt;
+  padding-left: 39%;
+  color:rgb(204,204,204);
+}
+#ck-2{
+ font-size: 12pt;
+ padding-left: 36%;
+ color:rgb(204,204,204);
+}
+#ck-3{
+ font-size: 12pt;
+ padding-left: 35%;
+ color:rgb(204,204,204);
+}
+#ck-4{
+ font-size: 12pt;
+ padding-left: 38%;
+ color:rgb(204,204,204);
+}
+/*약관텍스트 끝*/
+
+/*
+
+*/
+#confirm_btn{
+    width:137.5px;
+    height:41px;
+    background: rgb(51,51,51);
+    text-align: center;
+    margin-left: 43%
+}
+
+#confirm_text{
+    padding-top: 10px;
+    font-size:16px;
+    color:white;
+}
+
+
+
+#sitemap{
+    height:380px;
+    width:100%;
+    background:  rgb(44,44,44);
+}
+
+.sitemap1{
+    font-size:27px;
+    font-weight: bold;
+    color:white;
+    margin-left:0%; 
+}
+.sitemap2{
+    font-size:27px;
+    font-weight: bold;
+    color:white;
+}
+
+.sitemap3{
+    font-size:27px;
+    font-weight: bold;
+    color:white;
+}
+
+.sitemap4{
+    font-size:27px;
+    font-weight: bold;
+    color:white;
+    margin-top: 30%;
+}
+
+.sitemap5{
+    font-size:27px;
+    font-weight: bold;
+    color:white;
+}
+
+
+#tour{
+    line-height: 60px;
+    box-sizing:content-box;
+    width:200px;
+    height:110px;
+    margin-left: 32%;
+    padding: 0px;
+    float:left;
+     margin-top:1.6%
+}
+
+
+#board_map{
+    line-height: 60px;
+    box-sizing:content-box;
+    width:200px;
+    height:110px;
+    margin-left: 3.5%;
+    padding: 0px;
+    float:left;
+     margin-top:1.6%
+}
+
+#ques_map{
+    line-height: 60px;
+    box-sizing:content-box;
+    width:200px;
+    height:110px;
+    margin-left: 1%;
+    padding: 0px;
+    float:left;
+     margin-top:1.6%
+}
+
+#join_map{
+    line-height: 60px;
+    box-sizing:content-box;
+    width:200px;
+    height:110px;
+    margin-left: 46%;
+    padding-right: 0%;
+    margin-top:3%;
+    float:left;
+     
+}
+
+#login_map{
+    line-height: 60px;
+    box-sizing:content-box;
+    width:200px;
+    height:110px;
+    margin-left: 1%;
+    padding: 0px;
+    margin-top:3%;
+    float:left;
+}
+
+.tourist{
+    font-size: 12px;
+    margin-left: 2%;
+    line-height: 30px;
+    color:gray;
+    list-style-type: none;
+}
+.board_menu{
+    font-size: 12px;
+    margin-left: 2%;
+    line-height: 30px;
+    color:gray;
+    list-style-type: none;
+}
+.question{
+    font-size: 12px;
+    margin-left: 2%;
+    line-height: 30px;
+    color:gray;
+    list-style-type: none;
+}
+
+.join{
+    font-size: 12px;
+    margin-left: 2%;
+    line-height: 30px;
+    color:gray;
+    list-style-type: none;
+}
+
+.login{
+    font-size: 12px;
+    margin-left: 2%;
+    line-height: 30px;
+    color:gray;
+    list-style-type: none;
+}
+

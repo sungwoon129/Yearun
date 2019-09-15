@@ -1,0 +1,298 @@
+.fullBody{
+   margin:0 auto;
+   width:1000px;
+   
+} 
+.title {
+    margin-bottom: 60px;
+    font-weight:bold;
+    margin-top:64px;
+    
+}
+.questionBox{
+   display:inline-block;
+   width:1000px;
+   height:40px;
+   margin-bottom: 200px;
+}
+.qtext{
+	margin-left:15px;
+}
+.mark{
+   display:inline-block;
+   width:50px;
+   font-size:25px;
+   color:white;
+   background:#a2a2a2;
+   text-align:center;
+   margin-right:0;
+   padding-right:0;
+   height:40px;
+}
+.questionContent{
+   display:inline-block;
+   width:950px;
+   color:white;
+   background-color:#414141;
+   margin-left:0;
+   padding-left:0;
+   vertical-align:top;
+   height:40px;
+   font-weight:bold;
+}
+..questionContent p{
+   display:inline-block;
+   vertical-align:top;
+}
+.more {
+  display:block;
+  width: 55px;
+  height: 16px;
+  background-image:url('https://s.pstatic.net/static/www/img/2017/sp_nav_v170523.png');
+  background-position: 0 -78px;
+}
+
+.blind {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+  width: 1px;
+  height: 1px;
+}
+
+.more:hover, .close:hover {
+  cursor:pointer;
+}
+
+.close {
+  display:block;
+  background-image:url('https://s.pstatic.net/static/www/img/2017/sp_nav_v170523.png');
+  width: 42px;
+  height: 16px;
+  background-position: -166px -78px;
+}
+
+.board {
+ 
+  font-size:18px;
+  position:absolute;
+  top:347px;
+  width:1000px;
+  height:135px;
+  background:white;
+  visibility:hidden;
+  border-spacing: 0;
+  text-align:center;
+  
+}
+
+.list {
+
+  float:left;
+  color:black;
+}
+
+.list li {
+  list-style:none;
+  margin-top:5px;
+}
+
+.list li:hover {
+  text-decoration:underline;
+  cursor:pointer;
+}
+.answer{
+   color:#6d6d6d;
+   
+   width:50px;
+   height:135px;
+   font-size:25px;
+   
+   
+}
+.answerContent{
+   color:#6d6d6d;
+}
+.list p{
+   display:inline-block;
+   
+}
+.answerColor{
+   background-color:whitesmoke;
+}
+
+
+/* 2번질문 */
+.more2 {
+  display:block;
+  width: 55px;
+  height: 16px;
+  background-image:url('https://s.pstatic.net/static/www/img/2017/sp_nav_v170523.png');
+  background-position: 0 -78px;
+}
+
+.blind2 {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+  width: 1px;
+  height: 1px;
+}
+
+.more2:hover, .close:hover {
+  cursor:pointer;
+}
+
+.close2 {
+  display:block;
+  background-image:url('https://s.pstatic.net/static/www/img/2017/sp_nav_v170523.png');
+  width: 42px;
+  height: 16px;
+  background-position: -166px -78px;
+}
+
+.board2 {
+ 
+  font-size:18px;
+  position:absolute;
+  top:587px;
+  width:1000px;
+  height:135px;
+  background:white;
+  visibility:hidden;
+  border-spacing: 0;
+  text-align:center;
+  
+}
+/* 3번질문 */
+.more3 {
+  display:block;
+  width: 55px;
+  height: 16px;
+  background-image:url('https://s.pstatic.net/static/www/img/2017/sp_nav_v170523.png');
+  background-position: 0 -78px;
+}
+
+.blind3 {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+  width: 1px;
+  height: 1px;
+}
+
+.more3:hover, .close:hover {
+  cursor:pointer;
+}
+
+.close3 {
+  display:block;
+  background-image:url('https://s.pstatic.net/static/www/img/2017/sp_nav_v170523.png');
+  width: 42px;
+  height: 16px;
+  background-position: -166px -78px;
+}
+
+.board3 {
+ 
+  font-size:18px;
+  position:absolute;
+  top:827px;
+  width:1000px;
+  height:135px;
+  background:white;
+  visibility:hidden;
+  border-spacing: 0;
+  text-align:center;
+  
+}
+/*4번 질문*/
+.more4 {
+  display:block;
+  width: 55px;
+  height: 16px;
+  background-image:url('https://s.pstatic.net/static/www/img/2017/sp_nav_v170523.png');
+  background-position: 0 -78px;
+}
+
+.blind4 {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+  width: 1px;
+  height: 1px;
+}
+
+.more4:hover, .close:hover {
+  cursor:pointer;
+}
+
+.close4 {
+  display:block;
+  background-image:url('https://s.pstatic.net/static/www/img/2017/sp_nav_v170523.png');
+  width: 42px;
+  height: 16px;
+  background-position: -166px -78px;
+}
+
+.board4 {
+ 
+  font-size:18px;
+  position:absolute;
+  top:1067px;
+  width:1000px;
+  height:135px;
+  background:white;
+  visibility:hidden;
+  border-spacing: 0;
+  text-align:center;
+  
+}
+
+/*5번 질문*/
+.more5 {
+  display:block;
+  width: 55px;
+  height: 16px;
+  background-image:url('https://s.pstatic.net/static/www/img/2017/sp_nav_v170523.png');
+  background-position: 0 -78px;
+}
+
+.blind5 {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+  width: 1px;
+  height: 1px;
+}
+
+.more5:hover, .close:hover {
+  cursor:pointer;
+}
+
+.close5 {
+  display:block;
+  background-image:url('https://s.pstatic.net/static/www/img/2017/sp_nav_v170523.png');
+  width: 42px;
+  height: 16px;
+  background-position: -166px -78px;
+}
+
+.board5 {
+ 
+  font-size:18px;
+  position:absolute;
+  top:1307px;
+  width:1000px;
+  height:135px;
+  background:white;
+  visibility:hidden;
+  border-spacing: 0;
+  text-align:center;
+  
+}

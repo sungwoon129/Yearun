@@ -1,0 +1,236 @@
+ @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
+ @import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+
+body, table, div, p, li {font-family: 'Nanum Gothic', sans-serif;}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+a:hover { 
+    color: skyblue;
+}
+
+
+
+
+.fullbody{
+	margin:0 auto;
+	width:1000px;
+}
+
+/*상단 공통으로 들어가는 부분*/
+
+#signup_box{
+    box-sizing: content-box;
+    width: 1000px;
+    height: 800px;
+    margin: 0 auto;
+}
+
+#signup_form{
+    width: 100%;
+    height: 800px;
+}
+
+#signup_title{
+    font-size: 20pt;
+    font-weight: bold;
+    margin-top:100px; 
+    text-align: center;
+    position:relative;
+    margin-left: 75px;
+    margin-bottom:100px;
+}
+
+
+
+.mypageIndex{
+	width:181px;
+	height:278px;
+	float:left;
+	border:1px solid #a1a1a1;
+	border-spacing:0;
+	color:#414141;
+	font-family:'Nanum Gothic';
+	font-weight:bold;
+}
+.mypageIndex th{
+	height:102px;
+	background-color:#414141;
+	color:white;
+	border-spacing:0px;
+}
+.mypageIndex td{
+	border-bottom:1px solid #a1a1a1;
+	color:#414141;
+	padding:10px;
+	
+}
+.mypageIndex td a{
+	display:block;
+	width:100%;
+	height:100%;
+	color:#414141;
+	cursor: pointer;
+}
+
+.mypageIndex td a:hover { 
+    color: skyblue;
+}
+.current{
+	background:#a1a1a1;
+}
+
+    
+        /* The Modal (background) */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+    
+        /* Modal Content/Box */
+        .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #000;
+    width: 42%;
+    
+    padding-bottom: 5%;
+    min-width: 600px;             
+        }  
+        .formButton{
+        width:144px;
+        height:89px;
+        background-color:#363636;
+        color:#fff;
+        border:none;
+        font-size:25pt;
+        }
+     	.formBox{
+     	display: inline-block;
+    height: 89px;
+    /* padding-bottom: 15px; */
+    position: relative;
+    top: -25px;}
+        .formBox p{
+        display:inline-block;}
+        .checkPwBtn{
+   		    display: inline-block;
+    position: relative;
+    top: -30px;
+    margin-left: 20px;
+       
+        }
+        .boot{
+     
+
+        
+        }
+        .modalBox{
+        text-align:center;
+        }
+        .linethree{
+        display:inline-block;
+        }
+        .topLine{
+            display: inline-block;
+    	/* width: 95%; */
+   		 padding-bottom: 10%;
+        }
+        .modalText{
+        display:inline-block;
+        font-size:12pt;
+        color:#aaaaaa;
+        }
+        .X{
+        float:right;
+        cursor:pointer;
+        }
+        .idBox{
+       text-align: left;
+    margin-bottom: 5%;
+        }
+        .pwBox{
+        text-align:left;}
+        .bootimg{
+           margin-right: 25px;
+        }
+        .modalBox form{
+        display:inline-block;}
+        .mid{
+        margin-left:25px;
+        }
+        #mpw{
+        margin-left:15px;
+        }
+        .goodByeBox{
+        width:900px;
+        text-align:center;
+        margin-top:50px;
+        margin-bottom:100px;
+        }
+        .okay{
+        display:inline-block;
+        width:140px;
+        height:60px;
+        background-color:#414141;
+        color:white;
+        vertical-align:middle;
+        margin-right:50px;
+        }
+        .okay a{
+        text-decoration:none;
+        font-size:20px;
+        }
+        .cancel{
+        display:inline-block;
+        width:140px;
+        height:60px;
+         background-color:#414141;
+          color:white;
+          vertical-align:middle;
+       
+        }
+        .cancel a{
+        text-decoration:none;
+          color:white;
+          
+        }
+  		.goodByeConfirm{
+  		height: 200px;
+  		width: 850px;
+  		display:table-cell;
+  		vertical-align:middle;
+  		border-top:2px solid #ccc;
+  		border-bottom:2px solid #ccc;
+  		
+  		}
+  		.goodByeConfirm p{
+  		font-size: 25px;
+  		font-weight:bold;
+  		}
+  		.okayText{
+  		position:relative;
+  		top:35%;
+  		 font-size:20px;
+  		 font-family:NanumSquare;
+  		}
+  		.cancelText{
+  		position:relative;
+  		top:35%;
+  		font-family:NanumSquare;
+  		 font-size:20px;
+  		}

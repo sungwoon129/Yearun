@@ -1,0 +1,854 @@
+ @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
+ @import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+
+body, table, div, p, li {font-family: 'Nanum Gothic', sans-serif;}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+a:hover { 
+    color: skyblue;
+}
+
+
+
+
+.fullbody{
+	margin:0 auto;
+}
+
+/*상단 공통으로 들어가는 부분*/
+
+#signup_box{
+    box-sizing: content-box;
+    width: 1000px;
+    height: 800px;
+    margin: 0 auto;
+}
+
+#signup_form{
+    width: 100%;
+    height: 800px;
+}
+
+#signup_title{
+    font-size: 20pt;
+    font-weight: bold;
+    margin-top:100px; 
+    text-align: center;
+    position:relative;
+    margin-left: 3%;
+    margin-bottom:100px;
+}
+
+
+.signup_index{
+    width:100%;
+    height: 58px;
+    border-bottom-style:solid;
+    border-top-style:solid;
+    border-bottom-width:1px;
+    border-bottom-color: rgb(183,183,183);
+    border-top-width: 1px;
+    border-top-color: rgb(183,183,183);
+    border-left: hidden;
+    border-right: hidden;    
+}
+
+
+#rectangle1{
+    color:grey;
+    width: 177px;
+    height: 58px;
+    margin-left: 23%;
+    background:/*rgb(102,102,102)*/;
+    text-align: center;
+    font-weight: bold;
+    float:left;
+}
+
+#rectangle2{
+    color:white;
+    width: 177px;
+    height: 58px;
+    background:rgb(102,102,102);
+    text-align: center;
+    font-weight: bold;
+    float:left;
+}
+
+#rectangle3{
+    color:grey;
+    width: 177px;
+    height: 58px;
+    background:/*rgb(102,102,102)*/;
+    text-align: center;
+    font-weight: bold;
+    float:left;
+}
+
+
+#r_text1{
+    margin-top: 20px;
+}
+
+#r_text2{
+    margin-top: 20px;
+}
+
+#r_text3{
+    margin-top: 20px;
+}
+
+/*상단 공통으로 들어가는 부분 끝*/
+
+
+
+#innerinfo{
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-top-style: solid;
+    border-top-width: 2px;
+/*     margin-left: 9.5%;
+    margin-top: 1%; */
+    border-spacing: 0px;
+}
+
+
+
+#innerinfo tr td{
+    color:rgb(174,174,174);
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    margin-left: -2px;
+}
+
+input{
+    height: 29px;
+    border:none;
+    background: rgb(242,242,242);
+    margin-left: 0%;
+}
+
+
+#innerinfo tr th{
+    margin: 0px;
+    padding:0px;
+    width: 132px;
+    color:grey;
+    background: rgb(204,204,204);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+
+/**/
+#info1_title_text{
+    text-align: center;
+    margin-top: 10%;
+    font-size: 12px;
+    font-weight: bold;
+}
+#info2_title_text{
+    text-align: center;
+    margin-top: 11%;
+    font-size: 12px;
+    font-weight: bold;
+}
+#info3_title_text{
+    text-align: center;
+    margin-top: 10%;
+    font-size: 12px;
+    font-weight: bold;
+}
+#info4_title_text{
+    text-align: center;
+    margin-top: 20%;
+    font-size: 12px;
+    font-weight: bold;
+}
+#info4-1_title_text{
+    text-align: center;
+    margin-top: 20%;
+    font-size: 12px;
+    font-weight: bold;
+}
+#info5_title_text{
+    text-align: center;
+    margin-top: 20%;
+    font-size: 12px;
+    font-weight: bold;
+}
+#info6_title_text{
+    text-align: center;
+    margin-top: 11%;
+    font-size: 12px;
+    font-weight: bold;
+}
+#info7_title_text{
+    text-align: center;
+    margin-top: 10%;
+    font-size: 12px;
+    font-weight: bold;
+}
+#info8_title_text{
+    text-align: center;
+    margin-top: 12%;
+    font-size: 12px;
+    font-weight: bold;
+}
+#info9_title_text{
+    text-align: center;
+    margin-top: 10%;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+#info1_title{
+    margin: 0px;
+    padding:0px;
+    width: 132px;
+    height: 43px;
+    color:grey;
+    background: rgb(225,225,225);
+    float:left
+}
+
+#name_input{
+    width: 100px;
+    margin-left: 8px;
+    margin-top: 7px;
+}
+
+
+#info2_title{
+    margin: 0px;
+    padding:0px;
+    width: 132px;
+    height: 44px;
+    color:gray;
+    background: rgb(225,225,225);
+    float:left;
+}
+
+#birthinput_box{
+    width: 400px;
+    height: 29px;
+    box-sizing: content-box;
+    margin-left: 1%;
+    margin-top: 0.5%;
+    float: left;
+}
+
+#birth_input1{
+    width:100px;
+    margin-top: 3px;
+}
+
+#birth_input2{
+    width:100px;
+    margin-top: 3px;
+}
+
+#birth_input3{
+    width:100px;
+    margin-top: 3px;
+}
+
+#info3_title{
+    margin: 0px;
+    padding:0px;
+    width: 132px;
+    height: 42px;
+    color:gray;
+    background: rgb(225,225,225);
+    float:left;
+}
+
+.male{
+    margin-top: 0px;
+    margin-left: 1%;
+   
+    float:left;
+}
+
+.female{
+    margin-top: 0px;
+    margin-left: 1%;   
+  
+    float:left;
+}
+
+
+#info4_title{
+    margin: 0px;
+    padding:0px;
+    width: 132px;
+    height: 66px;
+    color:grey;
+    background: rgb(225,225,225);
+    float:left;
+    
+}
+
+#idinput_box{
+    box-sizing: content-box;
+    width: 220px;
+    height: 50px;
+    float:left;
+    margin-left: 2%;
+    margin-top: 1%
+    
+}
+
+#id_input{
+    width:150px;
+}
+
+#id_btn{
+    width: 110px;
+    height: 29px;
+    float:left;
+    
+}
+
+#info4_title2{
+    margin-left: -5%;
+    padding:0px;
+    width: 132px;
+    height: 66px;
+    color:grey;
+    background: rgb(225,225,225);
+    float:left;
+    
+}
+
+#nn_input{
+    width:100px;
+    margin-left: 1%;
+    margin-top:2.5%;
+}
+
+#info5_title{
+    margin: 0px;
+    padding:0px;
+    width: 132px;
+    height: 66px;
+    color:gray;
+    background: rgb(225,225,225);
+    float:left;
+    
+}
+
+#pwinput_box{
+    box-sizing: content-box;
+    width: 220px;
+    height: 50px;
+    float:left;
+    margin-left: 2%;
+    margin-top: 1%
+    
+}
+
+pw_input{
+    margin-left: %;
+    margin-top: %;
+}
+
+#info6_title{
+    margin: 0px;
+    padding:0px;
+    width: 132px;
+    height: 42px;
+    color:grey;
+    background: rgb(225,225,225);
+    float:left;
+    
+}
+
+#pwiinput_box{
+}
+
+#pwi_input{
+    margin-top: 0.85%;
+    margin-left: 2%;
+}
+
+#info7_title{
+    margin: 0px;
+    padding:0px;
+    width: 132px;
+    height: 42px;
+    color:grey;
+    background: rgb(225,225,225);
+    float:left;
+    
+}
+
+#phone_box{
+    box-sizing: content-box;
+    height: 29px;
+    width: 600px;
+    margin-left: 1%;
+    margin-top: 0.85%;
+    float:left;
+}
+
+#phone1_input{
+    width: 100px;
+}
+
+#phone2_input{
+    width: 100px;
+}
+
+#phone3_input{
+    width: 100px;
+}
+
+#info8_title{
+    margin: 0px;
+    padding:0px;
+    width: 132px;
+    height: 45px;
+    color:gray;
+    background: rgb(225,225,225);
+    float:left;
+    
+}
+
+#address_box1{
+    box-sizing: content-box;
+    height: 29px;
+    width: 290px;
+    margin-left: 1%;
+    margin-top: 0.6%;
+    float:left;
+}
+
+#address_box2{
+    box-sizing: content-box;
+    height: 29px;
+    width: 290px;
+    margin-left: 2%;
+    margin-top: 0.6%;
+    float:left;
+}
+
+#address1_input{
+    margin-top: 3px;
+}
+
+#address2_input{
+    width:220px;
+    margin-top: 3px;
+}
+
+#info9_title{
+    margin: 0px;
+    padding:0px;
+    width: 132px;
+    height: 42px;
+    color:grey;
+    background: rgb(225,225,225);
+    float:left;
+    
+}
+
+#mail_box{
+    box-sizing: content-box;
+    height: 29px;
+    width: 400px;
+    margin-left: 1%;
+    margin-top: 0.85%;
+    float:left;
+}
+/**/
+
+
+/*첫번째줄*/
+.info1{
+    height: 43px;
+}
+/*첫번째줄*/        
+
+/*두번째줄*/
+.info2{
+    height: 44px;
+}
+/*두번째줄*/
+
+/*세번째줄*/
+.info3{
+    height: 42px;
+}
+/*세번째줄*/
+
+/*네번째줄*/
+.info4{
+    height: 66px;
+}
+
+.id_text{
+    font-size:12px;
+    color:rgb(255,102,51);
+    padding-top: 3%;
+}
+/*네번째줄*/
+
+/*다섯번째줄*/
+.info5{
+    font-size:pt;
+    height: 66px;
+}
+
+.pw_text{
+    font-size:12px;
+    color:rgb(255,102,51);
+    padding-top: 1%;
+}
+/*다섯번째줄*/
+
+/*여섯번째줄*/
+.info6{
+    height: 42px;
+}
+/*여섯번째줄*/
+
+/*일곱번째줄*/
+.info7{
+    height: 42px;
+}
+/*일곱번째줄*/
+
+/*여덟번째줄*/
+.info8{
+    height: 45px;
+}
+/*여덟번째줄*/
+
+/*아홉번째줄*/
+.info9{
+   height: 42px; 
+}
+/*아홉번째줄*/
+
+
+
+
+
+
+/*btn*/
+#id_height{
+    width: 169px;
+    height:29px;
+}
+
+#id_doublecheck{
+    width:110px;
+    height: 29px;
+    background: rgb(153,153,153);
+    display:inline-block;
+    color:white;
+    text-align: center;
+    margin-left: -55%;
+    margin-top: 7%;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+#nn_doublecheck{
+    width:77px;
+    height: 25px;
+    background: rgb(153,153,153);
+    display:inline-block;
+    color:white;
+    text-align: center;
+    margin-left: 9px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    
+}
+
+#find_address{
+    width: 110px;
+    height: 25px;
+    background: rgb(153,153,153);
+    display:inline-block;
+    color:white;
+    text-align: center;
+    margin-left: 9px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+/*btn*/
+
+
+
+
+
+
+/*가입완료버튼*/
+.confirmBtnBox{
+    width:137.5px;
+    padding-top: 2%;
+    margin: 0 auto;
+}
+#confirm_btn{
+    width:137.5px;
+    height:41px;
+    background: rgb(51,51,51);
+    text-align: center;
+    margin-top:2%;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    
+}
+
+#confirm_text{
+    font-size:16px;
+    color:white;
+    text-align: center;
+}
+
+/*가입완료버튼 끝*/
+
+
+
+
+
+
+
+
+
+#sitemap{
+    height:380px;
+    width:100%;
+    background:  rgb(44,44,44);
+}
+
+.sitemap1{
+    font-size:27px;
+    font-weight: bold;
+    color:white;
+    margin-left:0%; 
+}
+.sitemap2{
+    font-size:27px;
+    font-weight: bold;
+    color:white;
+}
+
+.sitemap3{
+    font-size:27px;
+    font-weight: bold;
+    color:white;
+}
+
+.sitemap4{
+    font-size:27px;
+    font-weight: bold;
+    color:white;
+    margin-top: 30%;
+}
+
+.sitemap5{
+    font-size:27px;
+    font-weight: bold;
+    color:white;
+}
+
+
+#tour{
+    line-height: 60px;
+    box-sizing:content-box;
+    width:200px;
+    height:110px;
+    margin-left: 32%;
+    padding: 0px;
+    float:left;
+     margin-top:1.6%
+}
+
+
+#board_map{
+    line-height: 60px;
+    box-sizing:content-box;
+    width:200px;
+    height:110px;
+    margin-left: 3.5%;
+    padding: 0px;
+    float:left;
+     margin-top:1.6%
+}
+
+#ques_map{
+    line-height: 60px;
+    box-sizing:content-box;
+    width:200px;
+    height:110px;
+    margin-left: 1%;
+    padding: 0px;
+    float:left;
+     margin-top:1.6%
+}
+
+#join_map{
+    line-height: 60px;
+    box-sizing:content-box;
+    width:200px;
+    height:110px;
+    margin-left: 46%;
+    padding-right: 0%;
+    margin-top:3%;
+    float:left;
+     
+}
+
+#login_map{
+    line-height: 60px;
+    box-sizing:content-box;
+    width:200px;
+    height:110px;
+    margin-left: 1%;
+    padding: 0px;
+    margin-top:3%;
+    float:left;
+}
+
+.tourist{
+    font-size: 12px;
+    margin-left: 2%;
+    line-height: 30px;
+    color:gray;
+    list-style-type: none;
+}
+.board_menu{
+    font-size: 12px;
+    margin-left: 2%;
+    line-height: 30px;
+    color:gray;
+    list-style-type: none;
+}
+.question{
+    font-size: 12px;
+    margin-left: 2%;
+    line-height: 30px;
+    color:gray;
+    list-style-type: none;
+}
+
+.join{
+    font-size: 12px;
+    margin-left: 2%;
+    line-height: 30px;
+    color:gray;
+    list-style-type: none;
+}
+
+.login{
+    font-size: 12px;
+    margin-left: 2%;
+    line-height: 30px;
+    color:gray;
+    list-style-type: none;
+}
+footer{
+    height:270px;
+    width:100%;
+    background:  rgb(37,36,37);
+}
+
+#footer_logo{
+    margin-top: 50px;
+}
+
+#footer_address{
+    box-sizing:content-box;
+    width:619px;
+    height:60px;
+    line-height: 17px;
+    margin-left: 25%;
+    margin-top: -19.5px;
+    float:left;
+
+}
+
+#footer_call{
+    box-sizing:content-box;
+    width:170px;
+    height:100px;
+    line-height: 19px;
+    padding-top: 6.8%;
+    margin-left: 65%;
+    float:left;
+    font-size: 12px;
+}
+.address{
+    color:white;
+    font-size: 12px;
+    padding-top: 18px;
+}
+
+.call{
+    
+    color:white;    
+    font-size: 12px;
+}
+
+.add{
+    
+    list-style-type: none;
+}
+
+.cal{
+    list-style-type: none;
+}
+.mypageIndex{
+	width:181px;
+	height:278px;
+	float:left;
+	border:1px solid #a1a1a1;
+	border-spacing:0;
+	color:#414141;
+	font-family:'Nanum Gothic';
+	font-weight:bold;
+}
+.mypageIndex th{
+	height:102px;
+	background-color:#414141;
+	color:white;
+	border-spacing:0px;
+}
+.mypageIndex td{
+	border-bottom:1px solid #a1a1a1;
+	color:#414141;
+	padding:10px;
+}
+.mypageIndex td a{
+	display:block;
+	width:100%;
+	height:100%;
+	color:#414141;
+	cursor: pointer;
+}
+
+.mypageIndex td a:hover { 
+    color: skyblue;
+}
+.current{
+	background:#a1a1a1;
+}
+
+
+

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+	<settings>
+		<setting name="mapUnderscoreToCamelCase" value="true" />
+	</settings>
+
+	<typeAliases>
+		<typeAlias type="kr.ac.kopo.polycms.model.User" alias="User" />
+		<typeAlias type="kr.ac.kopo.polycms.model.Post" alias="Post" />
+		<typeAlias type="kr.ac.kopo.polycms.model.RPost" alias="RPost" />
+		<typeAlias type="kr.ac.kopo.polycms.model.CommentVO" alias="CommentVO" />
+		<typeAlias type="kr.ac.kopo.polycms.model.RCommentVO" alias="RCommentVO" />
+		<typeAlias type="kr.ac.kopo.polycms.model.Area" alias="Area" />
+		<typeAlias type="kr.ac.kopo.polycms.model.Hotel" alias="Hotel" />
+		<typeAlias type="kr.ac.kopo.polycms.model.Restaurant" alias="Restaurant" />
+		<typeAlias type="kr.ac.kopo.polycms.model.Loaction" alias="Loaction" />
+		<typeAlias type="kr.ac.kopo.polycms.model.Notice" alias="Notice" />
+
+		<typeAlias type="kr.ac.kopo.polycms.model.MyArticle" alias="MyArticle" />
+		<typeAlias type="kr.ac.kopo.polycms.model.MyComment" alias="MyComment" />
+
+		<typeAlias type="kr.ac.kopo.polycms.model.Planner" alias="Planner" />
+		<typeAlias type="kr.ac.kopo.polycms.model.ChatDto" alias="ChatDto" />
+		<typeAlias type="kr.ac.kopo.polycms.model.ChatMemberDto" alias="ChatMemberDto" />
+	</typeAliases>
+
+	<mappers>
+		<mapper resource="mybatis/user.xml" />
+		<mapper resource="mybatis/board.xml" />
+		<mapper resource="mybatis/freecomment.xml" />
+		<mapper resource="mybatis/reviewcomment.xml" />
+		<mapper resource="mybatis/map.xml" />
+		<mapper resource="mybatis/rboard.xml" />
+		<mapper resource="mybatis/notice.xml" />
+		<mapper resource="mybatis/chat.xml" />
+	</mappers>
+</configuration>

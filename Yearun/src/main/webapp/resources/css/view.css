@@ -1,0 +1,239 @@
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+
+
+.title{
+       margin:40px 0 40px 0px;
+} 
+
+.contentsArea{
+	margin:0 auto;
+	width:1000px;
+	margin-top:68px;
+	
+}
+.line_one{
+	border-top:1px solid grey;
+	border-bottom:1px solid grey;
+	padding:13px 0 13px 0;
+	width:950px;
+}
+.freeTitle{
+	margin-left:36px;
+	font-weight:bold;
+}
+.temper{
+	padding-left:10px;
+	margin-left:14px;
+	border-left:1px solid grey;
+	color:#b0aeae;
+}
+.regDate{
+	float:right;
+	/* margin-left:550px; */
+	color:#b0aeae;
+}
+.line_two{
+	margin:15px 28px 15px 36px;
+}
+.writer{
+	color:#383739;
+	font-weight:bold;
+}
+.writer_el{
+	color:#383739;
+	font-weight:bold;
+}
+.recommendBtn{
+	float:right;
+	margin-right:30px;
+}
+.recommendBtn a{
+	text-decoration:none;
+	color:#383739;
+	font-weight:bold;
+	
+}
+.recommendBtn a:hover{
+	color:red;
+}
+.freeContents{
+	margin-left:36px;
+	margin-bottom:27px;
+	width:850px;
+	word-break:normal;
+	    word-wrap: break-word;
+	    overflow: auto;
+}
+.attach{
+	margin-left:36px;
+	margin-bottom:20px;
+	font-weight:bold;
+	
+}
+.attachText{
+	color:#636262;
+}
+.line_three{
+	margin-left:36px;
+	margin-bottom:10px;
+}
+.line_three span{
+	margin-right:10px;
+	color:grey;
+	font-weight:bold;
+	
+}
+
+.totalComment{
+	border-right:1px solid grey;
+	padding-right:10px;
+}
+.ref_el{
+	border-right:1px solid grey;
+	padding-right:10px;
+}
+.commentList{
+	
+	width:900px;
+	
+}
+.allContents div {
+	word-break: normal;
+	word-wrap: break-word;
+	
+}
+.commentBox{
+	margin:0 auto;
+	margin-bottom:10px;
+	width:925px;
+	border:/* 1px solid grey; */ none;
+	background:/* #dbd8d8; */#f5f5f5;
+	padding:15px 0 15px 25px;
+}
+#content{
+	width:778px;
+	height:50px;
+	font-family: 'Nanum Gothic', sans-serif;
+	margin-bottom:5px;
+}
+.commentBtn{
+	width:95px;
+	height:53px;
+	background:#acacac;
+	color:white;
+	font-weight:bold;
+	font-size:17px;
+	font-family:'Nanum gothic';
+	border:0;
+	outline:0;
+	
+}
+.commentWriter{
+	font-weight:bold;
+	color:#414141;
+	/* margin-right:790px; */
+	
+	
+}
+.cRegDate{
+	margin-left:5px;
+	color:grey;
+	font-size:12px;
+	font-family: 'Nanum Gothic', sans-serif;
+
+}
+.writerLine{
+	margin-bottom:15px;
+	
+}
+
+/*수정 폼 디자인 */
+.form-control{
+padding: 5px;   
+    border: 1px solid #DDDDDD;
+    
+   
+    box-shadow: 0 0 2px #DDDDDD;
+	
+}
+.form-control focus{
+	 box-shadow:0 0 2px #FFFE00;
+}
+.form-contorl hover{
+	  border:1px solid #cccccc;
+}
+
+
+
+.updateBtn2 {
+
+    width:45px;
+
+    background-color: #414141;;
+
+    border: none;
+
+    color:#fff;
+
+    padding: 8px 0;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    display: inline-block;
+
+    font-size: 11px;
+
+    margin: 4px;
+
+    cursor: pointer;
+    
+    
+
+}
+
+
+
+
+}
+.allContents{
+	margin-bottom:12px;
+	
+}
+
+.allContents p{
+	font-family: 'Nanum Gothic', sans-serif;
+	color:#383739;
+	margin-bottom:5px;
+}
+
+.btnList{
+	width:1000px;
+	margin:0 auto;
+	
+}
+.btnList button{
+
+	margin-right:5px;
+	margin-bottom:150px;
+}
+.btnposition{
+/* 	margin-left:583px; */
+margin-left:30px;
+}
+.commentcontroller{
+	float:right;
+	cursor:pointer;
+	color:grey;
+}
+#cUpdateBtn{
+	margin-left:5px;
+}
+.recommendLink{
+	border:0;
+	outline:0;
+}
+.delete{
+	cursor:pointer;
+}

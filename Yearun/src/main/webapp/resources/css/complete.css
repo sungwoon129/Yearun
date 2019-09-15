@@ -1,0 +1,359 @@
+ @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+body, table, div, p, li {font-family: 'Nanum Gothic', sans-serif;}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+a:hover { 
+    color: skyblue;
+}
+
+
+
+
+
+
+/*상단 공통으로 들어가는 부분*/
+
+#signup_box{
+    box-sizing: content-box;
+    width: 1000px;
+    height: 1463px;
+    margin: 0 auto;
+}
+
+#signup_form{
+    width: 100%;
+    height: 700px;
+}
+
+#signup_title{
+    font-size: 20pt;
+    font-weight: bold;
+    margin-top:2%; 
+    text-align: left;
+    position:relative;
+    margin-left: 3%;
+    margin-bottom:2.5%;
+}
+
+
+.signup_index{
+    width:100%;
+    height: 58px;
+    border-bottom-style:solid;
+    border-top-style:solid;
+    border-bottom-width:1px;
+    border-bottom-color: rgb(183,183,183);
+    border-top-width: 1px;
+    border-top-color: rgb(183,183,183);
+    border-left: hidden;
+    border-right: hidden;    
+}
+
+
+#rectangle1{
+    color:gray;
+    width: 177px;
+    height: 58px;
+    margin-left: 23%;
+    background:/*rgb(102,102,102)*/;
+    text-align: center;
+    font-weight: bold;
+    float:left;
+}
+
+#rectangle2{
+    color:gray;
+    width: 177px;
+    height: 58px;
+    background:/*rgb(102,102,102)*/;
+    text-align: center;
+    font-weight: bold;
+    float:left;
+}
+
+#rectangle3{
+    color:white;
+    width: 177px;
+    height: 58px;
+    background:rgb(102,102,102);
+    text-align: center;
+    font-weight: bold;
+    float:left;
+}
+
+
+#r_text1{
+    margin-top: 20px;
+}
+
+#r_text2{
+    margin-top: 20px;
+}
+
+#r_text3{
+    margin-top: 20px;
+}
+
+/*상단 공통으로 들어가는 부분 끝*/
+
+
+
+
+.complete_text1{
+    font-size:30px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.complete_text2{
+    font-size:30px;
+    text-align: center;
+}
+
+.IDalertbox{
+    box-sizing: content-box;
+    width: 1000px;
+    height: 150px;
+    margin-top: 10%;
+    
+}
+.complete_img{
+    margin-left:19.5%;
+    float:left;
+}
+
+.complete_text3{
+    width: 500px;
+    font-size:30px;
+    color:rgb(102,102,102);
+    margin-top: 3.5%;
+    margin-left:3%;
+    float:left
+}
+
+.complete_btline{
+    margin-top: 4%;
+}
+
+
+
+
+
+
+/*홈으로 버튼*/
+
+#confirm_btn{
+    width:137.5px;
+    height:41px;
+    background: rgb(51,51,51);
+    text-align: center;
+    margin-top:2%;
+    margin-left: 43%;
+    font-size:16px;
+    color:white;
+    
+    
+}
+
+
+/*홈으로 버튼 끝*/
+
+
+
+
+
+
+
+
+
+#sitemap{
+    height:380px;
+    width:100%;
+    background:  rgb(44,44,44);
+}
+
+.sitemap1{
+    font-size:27px;
+    font-weight: bold;
+    color:white;
+    margin-left:0%; 
+}
+.sitemap2{
+    font-size:27px;
+    font-weight: bold;
+    color:white;
+}
+
+.sitemap3{
+    font-size:27px;
+    font-weight: bold;
+    color:white;
+}
+
+.sitemap4{
+    font-size:27px;
+    font-weight: bold;
+    color:white;
+    margin-top: 30%;
+}
+
+.sitemap5{
+    font-size:27px;
+    font-weight: bold;
+    color:white;
+}
+
+
+#tour{
+    line-height: 60px;
+    box-sizing:content-box;
+    width:200px;
+    height:110px;
+    margin-left: 32%;
+    padding: 0px;
+    float:left;
+     margin-top:1.6%
+}
+
+
+#board_map{
+    line-height: 60px;
+    box-sizing:content-box;
+    width:200px;
+    height:110px;
+    margin-left: 3.5%;
+    padding: 0px;
+    float:left;
+     margin-top:1.6%
+}
+
+#ques_map{
+    line-height: 60px;
+    box-sizing:content-box;
+    width:200px;
+    height:110px;
+    margin-left: 1%;
+    padding: 0px;
+    float:left;
+     margin-top:1.6%
+}
+
+#join_map{
+    line-height: 60px;
+    box-sizing:content-box;
+    width:200px;
+    height:110px;
+    margin-left: 46%;
+    padding-right: 0%;
+    margin-top:3%;
+    float:left;
+     
+}
+
+#login_map{
+    line-height: 60px;
+    box-sizing:content-box;
+    width:200px;
+    height:110px;
+    margin-left: 1%;
+    padding: 0px;
+    margin-top:3%;
+    float:left;
+}
+
+.tourist{
+    font-size: 12px;
+    margin-left: 2%;
+    line-height: 30px;
+    color:gray;
+    list-style-type: none;
+}
+.board_menu{
+    font-size: 12px;
+    margin-left: 2%;
+    line-height: 30px;
+    color:gray;
+    list-style-type: none;
+}
+.question{
+    font-size: 12px;
+    margin-left: 2%;
+    line-height: 30px;
+    color:gray;
+    list-style-type: none;
+}
+
+.join{
+    font-size: 12px;
+    margin-left: 2%;
+    line-height: 30px;
+    color:gray;
+    list-style-type: none;
+}
+
+.login{
+    font-size: 12px;
+    margin-left: 2%;
+    line-height: 30px;
+    color:gray;
+    list-style-type: none;
+}
+footer{
+    height:270px;
+    width:100%;
+    background:  rgb(37,36,37);
+}
+
+#footer_logo{
+    margin-top: 50px;
+}
+
+#footer_address{
+    box-sizing:content-box;
+    width:619px;
+    height:60px;
+    line-height: 17px;
+    margin-left: 25%;
+    margin-top: -19.5px;
+    float:left;
+
+}
+
+#footer_call{
+    box-sizing:content-box;
+    width:170px;
+    height:100px;
+    line-height: 19px;
+    padding-top: 6.8%;
+    margin-left: 65%;
+    float:left;
+    font-size: 12px;
+}
+.address{
+    color:white;
+    font-size: 12px;
+    padding-top: 18px;
+}
+
+.call{
+    
+    color:white;    
+    font-size: 12px;
+}
+
+.add{
+    
+    list-style-type: none;
+}
+
+.cal{
+    list-style-type: none;
+}
+

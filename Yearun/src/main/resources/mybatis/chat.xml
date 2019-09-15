@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="chat">
+		<!-- 방 존재 여부 확인 & 방정보 가져오기 -->
+	<!-- 방 존재 여부 확인 & 방정보 가져오기 -->
+	<select id="getRoom" resultType="ChatDto">
+	SELECT * FROM chat WHERE NAME =#{name} AND remaincount !=0
+	</select>
+	
+	<!-- 방 생성 -->
+	<insert id="createChatRoom">
+	INSERT INTO chat (name, pwd, totalcount, remaincount, content)
+	VALUES( #{name}, #{pwd}, #{totalcount}, 0 , #{content})
+	</insert>
+	
+	<!-- 존재하는 방 리스트가져오기 -->
+	<select id="getRoomList" resultType="ChatDto">
+	SELECT * FROM chat
+	WHERE remaincount !=0
+	</select>
+	
+	<!-- 현재 어떤 방에 들어가있는지 데이터추가하기 -->
+	<insert id="addRoomMember">
+	INSERT INTO chatmember(id, room, priroom)
+	VALUES(#{id}, #{room}, #{priroom})
+	</insert>
+	
+	<!-- 현재 아이디가 어떤방에 들어가있는지 확인 -->
+	<select id="getRoomMember" resultType="ChatMemberDto">
+	SELECT id,room,priroom
+	FROM chatmember
+	WHERE id = #{id}
+		
+	</select>
+	
+	<!-- 같은 방에 존재하는 사람정보 모두가져오기 -->
+	<select id="sameRoomList" resultType="ChatMemberDto">
+	SELECT id, room, priroom
+	FROM chatmember
+	WHERE room=#{room}
+	</select>
+	
+	<!-- 방변경 -->
+	<update id="updateRoomMember" >
+	<if test="room !=null and room !=''">
+	UPDATE chatmember SET room = #{room} 
+	WHERE id= #{id}
+	</if>
+	
+	<if test="priroom !=null and priroom !=''">
+	UPDATE chatmember SET priroom = #{priroom} 
+	WHERE id= #{id}
+	</if>	
+	</update>
+	
+	<!-- 방정보 제거-->
+	<delete id="deleteRoomMember">
+	DELETE FROM chatmember
+	WHERE id=#{id}
+	
+	</delete>
+	
+	
+	<!-- 채팅방 입장 count증가 : Controller에서 처리-->
+	<update id="updateChatCountInc">
+		UPDATE chat SET remaincount = remaincount + 1
+		WHERE name = #{name}
+	</update>
+	
+	<!-- 채팅방 입장 count감소 : Controller에서 처리-->
+	<update id="updateChatCountDec">
+		UPDATE chat SET remaincount = remaincount - 1
+		WHERE name = #{name}
+	</update>
+	
+	<!-- 채팅방 삭제 : remaincount가 0이되면 삭제한다. -->
+	<delete id="deleteChat">
+		DELETE FROM chat
+		WHERE remaincount = 0
+	</delete>
+	
+	<!-- 검색한 방 리스트가져오기 -->
+	<select id="searchRoomList" resultType="ChatDto">
+	SELECT * FROM chat
+	WHERE remaincount !=0 AND name LIKE #{name}
+	</select>
+
+</mapper>
+
+
+
+

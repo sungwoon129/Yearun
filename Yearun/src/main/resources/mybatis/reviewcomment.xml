@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="reviewcomment">
+<select id="commentList" resultType="RCommentVO">
+SELECT cno,review_code,content,id,reg_date FROM review_comment WHERE review_code=#{reviewCode}
+</select>
+
+<select id="commentCount" resultType="int">
+SELECT COUNT(*) FROM review_comment
+</select>
+
+<insert id="commentInsert">
+INSERT INTO review_comment(review_code,content,id,reg_date) VALUES(#{reviewCode},#{content},#{id},NOW())
+</insert>
+
+<delete id="commentDelete">
+DELETE FROM review_comment where cno = #{cno}
+</delete>
+
+<update id="commentUpdate">
+UPDATE review_comment SET content = #{content} WHERE cno = #{cno}
+</update>
+
+</mapper>

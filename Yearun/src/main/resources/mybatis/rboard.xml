@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="rboard">
+
+<sql id="search">
+		<where>
+			<!-- <![CDATA[]]> -->
+		<choose>
+		 <when test="pager.search == 'all'">
+		 review_title like CONCAT(CONCAT('%',#{pager.keyword}),'%') or review_context like CONCAT(CONCAT('%',#{pager.keyword}),'%')	
+		</when> 
+		
+		<when test="pager.keyword !='' and pager.keyword != null and pager.search != 'all'"> <!--  키워드앞에 #안붙음 -->
+		${pager.search} LIKE CONCAT(CONCAT('%',#{pager.keyword}),'%') <!-- xml파일에서는 %인식불가 CDATA를 통해서 문자로 만들어줌 그걸 concat으로 이어붙임 --> 
+		</when> <!-- #는 값으로 가져다 붙이는거 , $는 문자열로 가져다 붙이는거,$를 쓰면 해킹당할수도있음 -->
+		<otherwise>
+		
+		</otherwise>
+		</choose>
+		</where>
+	</sql>
+	
+	<select id="total" resultType="Integer">
+	SELECT COUNT(*) FROM review_board
+	<include refid="search"></include>
+	</select>
+	
+	<select id="todayTotal" resultType="Integer">
+	SELECT count(*) FROM review_board 
+	WHERE 	<choose>
+		<when test="pager.search =='all'">
+		 review_title like CONCAT(CONCAT('%',#{pager.keyword}),'%') or review_context like CONCAT(CONCAT('%',#{pager.keyword}),'%')	AND
+		</when>
+		
+		<when test="pager.keyword !='' and pager.keyword != null and pager.search != 'all'"> <!--  키워드앞에 #안붙음 -->
+		${pager.search} LIKE CONCAT(CONCAT('%',#{pager.keyword}),'%') AND <!-- xml파일에서는 %인식불가 CDATA를 통해서 문자로 만들어줌 그걸 concat으로 이어붙임 --> 
+		</when> <!-- #는 값으로 가져다 붙이는거 , $는 문자열로 가져다 붙이는거,$를 쓰면 해킹당할수도있음 -->
+		<otherwise>
+		
+		</otherwise>
+		</choose>reg_date > CURRENT_DATE( );
+	</select>
+	
+
+	<update id="incRef">
+		UPDATE review_board SET ref=ref+1 where review_code=#{reviewCode}
+	</update>
+	
+	<update id="incRecommend">
+			UPDATE review_board SET recommend=recommend+1 where review_code=#{reviewCode}
+	 </update>
+	 
+	 <insert id="checkRecommend">
+		INSERT INTO rrecommend VALUES(#{reviewCode},#{id})
+	</insert>
+	
+	<select id="list" resultType="RPost">
+		SELECT review_code,review_title,review_context,review_photoa,id,ref,recommend,reg_date,origin_no,group_ord,group_layer,(SELECT COUNT(*) FROM review_comment WHERE review_code= review_board.review_code) AS total_comment,thumbnail 
+		FROM review_board 
+		<include refid="search"></include>
+		ORDER BY origin_no DESC, group_ord ASC
+		
+		LIMIT #{pager.start},#{pager.perPage}
+	</select>
+	<select id="item" resultType="RPost">
+		SELECT *,(select count(*) from review_comment where review_code=review_board.review_code) AS total_comment FROM review_board WHERE review_code=#{reviewCode}
+	</select>
+	<delete id="delete">
+		DELETE FROM review_board WHERE review_code=#{reviewCode}
+	</delete>
+	<insert id="add" parameterType="RPost" useGeneratedKeys="true" keyProperty="reviewCode" >
+		INSERT INTO review_board (id,review_title,review_context,reg_date,review_photoa,origin_no,group_ord,group_layer,thumbnail )
+		VALUES (#{id},#{reviewTitle},#{reviewContext},NOW(),#{reviewPhotoA}, (SELECT MAX(review_code)+1 FROM review_board rb),1,0,#{thumbnail})
+	
+	
+	</insert>
+	
+	<update id="update">
+		UPDATE review_board
+		SET review_title=#{reviewTitle}, review_context=#{reviewContext}, review_photoa=#{reviewPhotoA}, thumbnail=#{thumbnail}
+		WHERE review_code=#{reviewCode}
+	</update>
+	
+ 
+	
+	<delete id="deleteComment">
+	DELETE FROM review_comment WHERE review_code=#{reviewCode}
+	</delete>
+	
+	<select id="countRecommend" resultType="Integer">
+	SELECT COUNT(*) FROM rrecommend WHERE id=#{id} and review_code=#{reviewCode}
+	</select>
+	
+	<select id="nlist" resultType="Notice">
+	SELECT * FROM notice ORDER BY notice_code DESC LIMIT 0,5
+	</select>
+	
+	<select id="countComment" resultType="Integer">
+	select count(*) AS total_comment from review_comment LEFT JOIN review_board ON review_comment.review_code=review_board.review_code WHERE review_comment.review_code=#{reviewCode}
+	</select>
+	
+	<select id="rlist" resultType="RPost">
+	SELECT * FROM review_board ORDER BY recommend DESC LIMIT 0,4 
+	</select>
+	
+	<select id="mylist" resultType="MyArticle">
+	select review_board.review_title myTitle,review_board.recommend myRecommend, review_board.reg_date myRegdate, review_board.ref myRef 
+	from review_board 
+	where id = #{id}
+	</select>
+	
+</mapper>

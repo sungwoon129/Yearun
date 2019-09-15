@@ -1,0 +1,346 @@
+  @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
+ @import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+
+ body, table, div, p, li {font-family: 'NanumGothic', sans-serif;} 
+ 
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+a:hover { 
+    color: skyblue;
+}
+a{
+   color:black;
+}
+table img{
+	vertical-align:bottom;
+}
+/* 탭 메뉴 */
+.tab-wrap * { 
+    margin: 0px; 
+    padding: 0px; 
+}
+.tab-wrap { 
+    position: relative; 
+    padding-top: 30px; 
+}
+.tab-wrap li { 
+    z-index: 2; 
+/*     position: absolute;  */
+    top: 0px; 
+/*     width: 100px;  */
+/*     height: 30px;  */
+/*     text-indent: -9999%;  */
+}
+.tab-wrap li:nth-of-type(1) { 
+    left: 0px; 
+}
+.tab-wrap li:nth-of-type(2) { 
+    left: 100px; 
+}
+
+
+.tab-wrap article p { 
+    display: none; 
+}
+.tab-wrap article:target p { 
+    display: block; 
+}
+.tab-wrap article .tabBox { 
+    display: none; 
+}
+.tab-wrap article:target .tabBox { 
+    display: block; 
+}
+.tab-wrap article .tabBox { 
+    display: none; 
+}
+.tab-wrap article:target .tabBox { 
+    display: block; 
+}
+
+
+
+/* .tab-wrap article:target div{ 
+    background-color: yellow; 
+} */
+/*상단 공통으로 들어가는 부분*/
+.tab-btn:target + .tab-link {
+    background: #fff;
+    font-weight: bold;
+    color: #000;
+}
+
+
+#signup_box{
+    box-sizing: content-box;
+    width: 1000px;
+    height: 1463px;
+    margin: 0 auto;
+}
+
+#tourlist_form{
+    width: 100%;
+    height: 2500px;
+}
+
+#signup_title{
+    font-size: 20pt;
+    font-weight: bold;
+    margin-top:2%; 
+    text-align: left;
+    position:relative;
+    margin-left: 3%;
+    margin-bottom:2.5%;
+}
+
+
+.signup_index{
+    width:100%;
+    height: 58px;
+    border-bottom-style:solid;
+    border-top-style:solid;
+    border-bottom-width:1px;
+    border-bottom-color: rgb(183,183,183);
+    border-top-width: 1px;
+    border-top-color: rgb(183,183,183);
+    border-left: hidden;
+    border-right: hidden;    
+}
+
+
+#rectangle1{
+    color:grey;
+    width: 177px;
+    height: 58px;
+    margin-left: 23%;
+    background:/*rgb(102,102,102)*/;
+    text-align: center;
+    font-weight: bold;
+    float:left;
+}
+
+
+
+
+
+#rectangle2{
+    color:grey;
+    width: 177px;
+    height: 58px;
+    background:;
+    text-align: center;
+    font-weight: bold;
+    float:left;
+}
+
+#rectangle3{
+    color:grey;
+    width: 177px;
+    height: 58px;
+    background:/*rgb(102,102,102)*/;
+    text-align: center;
+    font-weight: bold;
+    float:left;
+}
+
+
+.test1{height: 19px;
+    
+}
+
+.toulTitle{
+    font-size: 15pt;
+    width: 300px;
+    float:left;
+    
+}
+
+.test2{
+    height: 19px;
+    
+}
+
+.titleLine1{
+    width: 300px;
+}
+
+
+
+.titleLine2{
+    width: 300px;
+}
+
+
+.titleBox{
+    height: 50px;
+    box-sizing: content-box;
+    width: 1000px;
+    margin-top: 30px;
+}
+
+
+
+
+#r_text1{
+    margin-top: 20px;
+}
+
+#r_text2{
+    margin-top: 20px;
+}
+
+#r_text3{
+    margin-top: 20px;
+}
+
+/*상단 공통으로 들어가는 부분 끝*/
+
+
+
+.detailInfoTitle{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.detailInfoText{
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.table1{border-spacing: 0; margin-top: 30px;}
+.table2{border-spacing: 0; margin-top: 30px;}
+.table3{border-spacing: 0; margin-top: 30px;}
+.table4{border-spacing: 0; margin-top: 30px;}
+
+
+
+
+img{
+/*     vertical-align: bottom; */
+}
+
+
+.imageBox1{
+    width: 1000px;
+    height: 372px;
+    border-spacing: 0;
+    
+}
+
+.imageBox1 img{
+   width:1000px; 
+   height:372px;
+}
+
+.imageBox2{
+    width: 1000px;
+    height: 284px;
+    border-spacing: 0;
+    
+}
+
+.imageBox2 img{
+   width:1000px; 
+   height:284px;
+}
+
+
+.imageBox{
+    width: 647px;
+    height: 159px;
+    background: black;
+}
+
+.imageBox img{
+   width: 647px;
+    height: 200px;
+}
+.aimageBox {
+background: black;   
+}
+.aimageBox img{
+   width: 647px;
+    height: 200px;
+    
+}
+.imageBoxinfo{
+    width: 353px;
+    height: 159px;
+    background: black;
+}
+
+.textBox{
+    width: 353px;
+    height: 159px;
+}
+
+.buttonBox{
+    width: 1000px;
+    height: 15px;
+    margin-top: 50px;
+}
+
+.buttons{
+   width: 65px;
+   height: 15px;
+   margin: 0 auto;
+   
+}
+
+.button1{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border:0;
+    outline: 0;
+    cursor: pointer;
+}
+
+.button2{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border:0;
+    margin-left: 10px;
+    outline: 0;
+    cursor: pointer;
+}
+
+.button3{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border:0;
+    margin-left: 10px;
+    outline: 0;
+    cursor: pointer;
+}
+    
+
+
+.infoBox{
+    background: beige;
+    opacity: 0.8;
+}

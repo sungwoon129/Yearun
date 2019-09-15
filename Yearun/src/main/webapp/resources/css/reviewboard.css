@@ -1,0 +1,247 @@
+@charset "utf-8";
+
+    /* @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);  */
+ @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
+ @import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+ body {margin-top:0; margin-bottom:0; margin-left:0; margin-right:0 }
+
+
+.title{
+
+   float:left;
+   margin-top:64px;
+   margin-bottom:60px;
+   
+} 
+             
+.fullBody{
+   margin:0 auto;
+   width:1000px;
+   
+} 
+
+
+.newArticle{
+   clear:both;
+   color:orange;
+   font-weight:bold;
+}
+.countArticle{
+   
+    margin-top: 170px;  
+    display: inline-block;
+    margin-left:-106px;
+   
+}
+.searchArea{
+   float:right;
+    display: inline-block;
+    position:relative;
+      top:100px;
+     
+    margin-bottom:15px;
+    margin-top:60px;
+   
+}
+.searchArea input[type="text"],.searchArea input[type="submit"]{
+     vertical-align: top;
+}
+.category{
+    height:30px;
+    width:150px;
+}
+.keywordArea{
+    height:26px;
+    width:258px;
+}
+input.submitBtn{
+    border: none;
+    background: #414141;
+    color:white;
+    width:66px;
+    height:30px;
+    font-weight: bold;
+}
+
+
+
+
+.pager{
+   
+   margin-top:140px;
+    margin-bottom: 200px;
+    font-weight:600;
+   text-align:center;
+      
+    
+
+
+
+ 
+}
+
+.active {
+
+border: 1px solid grey;
+background-color:grey;
+color:white;
+padding:6px;
+display:inline-block;
+width:22px;
+margin: 3px;    
+
+
+}
+
+.active a{
+   color:white;
+   
+}
+
+.normal{
+
+border: 1px solid grey;
+color:grey;
+padding:6px;
+display:inline-block;
+width:22px;
+margin:3px;    
+
+}
+.normal p{
+text-align:center;
+padding:0;
+margin:0;
+}
+.active p{
+text-align:center;
+padding:0;
+margin:0;
+}
+
+
+.normal a{
+
+color:grey;
+
+
+}
+
+.previous{
+
+color:grey;
+margin-right:5px;
+padding:15px 15px 15px 0;
+
+
+
+  
+
+   
+
+}
+
+.previous a{
+color:grey;
+text-decoration:none;
+}
+.next{
+
+color:grey;
+margin-left:5px;
+padding:15px 0px 15px 15px;
+}
+.next a{
+color:grey;
+text-decoration:none;
+}
+.start{
+margin:5px;
+    color:grey;
+}
+.end{
+margin:5px;
+    color:grey;
+}
+.start a{
+color:grey;
+text-decoration:none;
+
+}
+.end a{
+color:grey;
+text-decoration:none;
+}
+
+.addArticle{
+   float:right;
+   position:relative;
+
+   margin-top:25px;
+}
+.line{
+   position: relative;
+       
+}
+.contentsTable{
+   width:1000px;
+   border-top:4px solid #383739;
+   border-bottom:4px solid #383739;
+   padding-top:80px;
+   padding-bottom:80px;
+   margin-top: 25px;
+      
+   
+   
+}
+table td{
+   width:27.2%;
+   margin-right:20px;
+
+}
+.articleImage{
+   width:184px;
+   height:190px;
+   
+}
+
+
+.articleRec{
+   float:right;
+   
+   color:grey;
+}
+.searchLine{
+   margin-bottom:25px;
+}
+.articleBox{
+   margin-bottom:25px;
+
+}
+.reviewimage{
+   width:184px;
+   height:190px;
+}
+.articleTitle{
+   /*  overflow: hidden; 
+  text-overflow: ellipsis;
+  white-space: nowrap;  */
+  /* width:158px; */
+  display:inline-block;
+}
+.articleTitle a{
+   text-decoration:none;
+   color:black;
+   font-weight:bold;
+   
+}
+
+.articleinfo{
+   color:grey;
+   width:184px;
+   
+}
+.comment{
+   color:orangered;
+   overflow:visible;
+}
